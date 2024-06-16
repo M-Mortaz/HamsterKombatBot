@@ -2,8 +2,7 @@ version: '3'
 services:
   bot:
     container_name: 'HamsterKombatBot'
-    build:
-      context: .
+    image: ghcr.io/shamhi/hamsterkombatbot:latest
     stop_signal: SIGINT
     restart: unless-stopped
     command: 
